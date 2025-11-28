@@ -1,4 +1,10 @@
 package com.acuadrado.vetclinic.service;
 
-public class OwnerService {
+import com.acuadrado.vetclinic.dto.OwnerDto;
+
+import java.util.List;
+
+public interface OwnerService {
+    List<OwnerDto> findAll();
+    OwnerDto create(OwnerDto ownerDto);
 }

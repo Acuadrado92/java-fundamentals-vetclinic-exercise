@@ -1,4 +1,9 @@
 package com.acuadrado.vetclinic.repository;
 
-public class VisitRepository {
+import com.acuadrado.vetclinic.entity.Visit;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface VisitRepository extends JpaRepository<Visit, Long> {
 }
